@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>GO ATV ADVENTURE</title>
+	<link rel="stylesheet" type="text/css"
+	media="all" href="style7.css">
+</head>
+<body>
+	<div id="layout">
+		<div id="header">
+		<img src="header.bmp" class="header">
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index7.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="Login.html">Login</a></li>
+				<li><a href="Galeri.html">Gallery</a></li>
+				<li><a href="Rute.html">Route</a></li>
+			</ul>
+		</div>
+		<div id="runningtext">
+		<marquee behavior="scroll" scrollamont="3" onmouseover="this.stop() ;" onmouseout="this.start() ;" direction="left"> 	
+			GO ATV ADVENTURE
+		</marquee>
+		</div>	
+<!-- =============== Login =============== -->
+
+<div class="wrapper">
+	<div class="title-text">
+		<div class="title-login"> Login </div>
+	</div>
+
+		<div class="form-inner">
+			<form action="#" class="signup">
+				<div class="field">
+					<input type="text" placeholder="Masukan Nama" required>
+				</div>
+				<div class="field">
+					<input type="text" placeholder="Masukan Email" required>
+				</div>
+				<div class="field">
+					<input type="password" placeholder="Masukan Password" required>
+				</div>
+				<div class="field">
+					<input type="password" placeholder="Konfimasi Password" required>
+				</div>
+				<div class="field-btn">
+					<div class="btn-layer">
+						<input type="submit" value="Daftar">
+					</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	const logintext= document.querySelector(".title-text .login");
+	const loginform= document.querySelector(".form .login");
+	const loginbtn= document.querySelector(".label .login");
+	const signupbtn= document.querySelector(".label .signup");
+	const signuplink= document.querySelector(".form .signup-link");
+	signupbtn.onclick=(()=>{
+		loginform.style.marginleft="-50%"
+		logintext.style.marginleft="-50%"
+	})
+	loginbtn.onclick=(()=>{
+		loginform.style.marginleft="0%"
+		logintext.style.marginleft="0%"
+	})
+	signuplink.onclick=(()=>{
+		signupbtn.onclick();
+		return false;
+	})
+</script>
+		<div id="footer"> &copy GO ATV ADVENTURE</div>
+	</div>
+</body>
+</html>	
